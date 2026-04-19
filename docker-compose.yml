@@ -1,2 +1,6 @@
-# TODO: define service for cron-time-reporter
-# TODO: mount logs/ volume so log files persist on the host
+services:
+  time-reporter:
+    image: cron-time-reporter
+    volumes:
+      - ./logs:/app/logs
+    restart: no
