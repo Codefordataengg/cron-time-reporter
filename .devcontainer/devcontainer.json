@@ -1,0 +1,4 @@
+{
+  // TODO: configure dev container for Python 3.11 + uv
+  "name": "cron-time-reporter"
+}

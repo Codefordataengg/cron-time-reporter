@@ -1,0 +1,29 @@
+[project]
+name = "cron-time-reporter"
+version = "0.1.0"
+description = "Logs current datetime and timezone on a schedule, with a --report flag to read recent entries."
+requires-python = ">=3.11"
+
+dependencies = [
+    "loguru>=0.7",
+    "click>=8.1",
+    "tzdata>=2026.1",
+]
+
+[project.scripts]
+cron-time-reporter = "src.main:cli"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.0",
+    "ruff>=0.4",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]

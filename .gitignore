@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+dist/
+
+# Logs (keep the directory, ignore log files)
+logs/*.log
+
+# uv
+.uv/
+
+# Environment
+.env
+
+# Claude Code local settings
+.claude/
+
+# OS
+.DS_Store
+Thumbs.db
